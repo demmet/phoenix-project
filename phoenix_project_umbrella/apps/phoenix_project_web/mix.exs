@@ -45,6 +45,7 @@ defmodule PhoenixProjectWeb.Mixfile do
       {:gettext, "~> 0.11"},
       {:phoenix_project, in_umbrella: true},
       {:cowboy, "~> 1.0"}
+      {:plug_cowboy, "~> 1.0"}
     ]
   end
 
@@ -53,6 +54,6 @@ defmodule PhoenixProjectWeb.Mixfile do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    ["test": ["ecto.create --quiet", "ecto.migrate", "test"]]
+    [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end
